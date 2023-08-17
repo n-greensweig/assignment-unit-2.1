@@ -1,20 +1,23 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Noah';
+console.log('first name ', firstName);
 
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Greensweig'
+console.log('last name ', lastName);
 
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 
 let fullName = firstName + ' ' + lastName;
+console.log('full name ', fullName);
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
 let luckyNumber = 7;
-console.log(luckyNumber);
+console.log('lucky number ', luckyNumber);
 
 // 5 - Create a variable `introduction` and using the variables from above,
 //     give it the value of:
@@ -22,32 +25,34 @@ console.log(luckyNumber);
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
 let introduction = 'My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner.';
-console.log(introduction);
+console.log('intro ', introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
 let adventurous = true;
-console.log(true);
-console.log(adventurous);
+console.log('adventurous ', adventurous);
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
 let food = 'Golden kiwi';
-console.log(food);
+console.log('favorite food ', food);
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
 let pets = 2;
-console.log(pets);
+console.log('pets ', pets);
 
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
 let friendsPets = 0
+console.log('friends pets ', friendsPets);
 
 // 10 - Add two pets to your `pets` variable
 pets += 2;
+console.log('pets plus two ', pets);
 
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 5;
+console.log('allowed pets ', allowedPets);
 
 // 12 - Create a variable called `result`. Create a conditional:
 //      if adventurous is true, set `result` to be "Adventures are great!", 
@@ -60,7 +65,7 @@ if (adventurous) {
 } else {
   result = `How about we stay home?`;
 }
-console.log(result);
+console.log('result ', result);
 
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
@@ -72,7 +77,7 @@ let diceRoll = 'Try again later.';
 if (luckyNumber === 2 && adventurous) {
   diceRoll = 'Roll the dice';
 }
-console.log(diceRoll);
+console.log('dice roll', diceRoll);
 
 
 // 14 - Create a variable called `petStatus`. 
@@ -84,9 +89,6 @@ console.log(diceRoll);
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 let petStatus;
-
-// The automated tests throw an error for this section of the code,
-// although I believe my code is correct and will thus keep the code as is.
 if (pets < allowedPets) {
   petStatus = 'I can have more pets';
 } else if (pets === allowedPets) {
@@ -94,6 +96,7 @@ if (pets < allowedPets) {
 } else if (pets > allowedPets) {
   petStatus = 'Oh no, I have too many pets!';
 }
+console.log('pet status ', petStatus);
 
 // STRETCH GOALS:
 
@@ -113,7 +116,7 @@ if (pets > friendsPets) {
   mostPets = pets;
 }
 
-console.log(mostPets);
+console.log('most pets ', mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -136,12 +139,12 @@ switch (luckyNumber) {
   default: luckyResult = 'Luck is what happens when preparation meets opportunity';
 }
 
-console.log(luckyResult);
+console.log('lucky result ', luckyResult);
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
 adventurous === true ? result = 'Adventures are great!' : result = 'How about we stay home?';
-console.log(result);
+console.log('ternary result ', result);
 
 
 
