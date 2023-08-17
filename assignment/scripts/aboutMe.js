@@ -86,7 +86,7 @@ console.log(diceRoll);
 let petStatus;
 
 // The automated tests throw an error for this section of the code,
-// although I believe my code is correct and will thus keep it as is.
+// although I believe my code is correct and will thus keep the code as is.
 if (pets < allowedPets) {
   petStatus = 'I can have more pets';
 } else if (pets === allowedPets) {
