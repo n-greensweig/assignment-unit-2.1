@@ -73,6 +73,7 @@ let diceRoll = 'Try again later.';
 if (diceRoll === 2 && adventurous) {
   diceRoll = 'Roll the dice';
 }
+console.log(diceRoll);
 
 
 // 14 - Create a variable called `petStatus`. 
@@ -83,7 +84,18 @@ if (diceRoll === 2 && adventurous) {
 //      set `petStatus` to the value of "I have enough pets" 
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
+let petStatus;
+console.log('tester ', pets);
+console.log('tester ', allowedPets);
 
+if (pets < allowedPets) {
+  petStatus = 'I can have more pets';
+} else if (pets === allowedPets) {
+  petStatus = 'I have enough pets';
+} else {
+  petStatus = 'Oh no, I have too many pets!';
+}
+console.log('tester ', petStatus);
 
 // STRETCH GOALS:
 
@@ -92,6 +104,18 @@ if (diceRoll === 2 && adventurous) {
 //      assigns the highest value to `mostPets`. There's several possibilities --
 //      be sure to think through all the scenarios. 
 //      console.log `mostPets` after the conditional has run.
+
+let mostPets;
+
+if (pets > friendsPets) {
+  mostPets = pets;
+} else if (pets < friendsPets) {
+  mostPets = friendsPets;
+} else {
+  mostPets = pets;
+}
+
+console.log(mostPets);
 
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
@@ -102,9 +126,24 @@ if (diceRoll === 2 && adventurous) {
 //      You'll need to research how to use switch statements!
 //      console.log `luckyResult` after the conditional has run.
 
+let luckyResult;
+
+switch (luckyNumber) {
+  case 1: luckyResult = 'First is the worst';
+    break;
+  case 2: luckyResult = 'Second is the best';
+    break;
+  case 3: luckyResult = 'Third is the one with the polka dot dress';
+    break;
+  default: luckyResult = 'Luck is what happens when preparation meets opportunity';
+}
+
+console.log(luckyResult);
+
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
-
+// adventurous = true ? result = 'Adventures are great!' : result = 'How about we stay home?';
+// console.log(result);
 
 
 
