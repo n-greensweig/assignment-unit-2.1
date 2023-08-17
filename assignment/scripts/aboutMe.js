@@ -1,6 +1,7 @@
 // REQUIRED FEATURES:
 // 1 - Create a variable called `firstName` and assign it the value of your first name
 let firstName = 'Noah';
+
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Greensweig'
 
@@ -8,9 +9,7 @@ let lastName = 'Greensweig'
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 
-let fullName = `${firstName} ${lastName}`; /* Note: I'm familiar with template literal strings from previous work in JavaScript.
- I use template literal string simply to demonstrate that I am familiar with basic JavaScript notation.*/
-console.log(fullName);
+let fullName = firstName + ' ' + lastName;
 
 // 4 - Create a variable called `luckyNumber` and assign it the value of your lucky number.
 //     Console log the value of `luckyNumber`
@@ -22,7 +21,7 @@ console.log(luckyNumber);
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
-let introduction = `My name is ${fullName}, and I think ${luckyNumber} is a winner.`;
+let introduction = 'My name is ' + fullName + ', and I think ' + luckyNumber + ' is a winner.';
 console.log(introduction);
 
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
@@ -70,7 +69,7 @@ console.log(result);
 //      Console log the value of `diceRoll`
 let diceRoll = 'Try again later.';
 
-if (diceRoll === 2 && adventurous) {
+if (luckyNumber === 2 && adventurous) {
   diceRoll = 'Roll the dice';
 }
 console.log(diceRoll);
@@ -85,17 +84,16 @@ console.log(diceRoll);
 //      if the value of `pets` is greater than the value of `allowedPets`.
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 let petStatus;
-console.log('tester ', pets);
-console.log('tester ', allowedPets);
 
+// The automated tests throw an error for this section of the code,
+// although I believe my code is correct and will thus keep it as is.
 if (pets < allowedPets) {
   petStatus = 'I can have more pets';
 } else if (pets === allowedPets) {
   petStatus = 'I have enough pets';
-} else {
+} else if (pets > allowedPets) {
   petStatus = 'Oh no, I have too many pets!';
 }
-console.log('tester ', petStatus);
 
 // STRETCH GOALS:
 
@@ -142,8 +140,8 @@ console.log(luckyResult);
 
 // 17 -- Rewrite question 12 with a `ternary` operator. You'll need to do research!
 
-// adventurous = true ? result = 'Adventures are great!' : result = 'How about we stay home?';
-// console.log(result);
+adventurous === true ? result = 'Adventures are great!' : result = 'How about we stay home?';
+console.log(result);
 
 
 
